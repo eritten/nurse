@@ -1,12 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title{% block title %} {% endblock %}></title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- header -->
+<header>
+    <div class="header-content">
+        <h1>welcome to Vineyard's medical Limited</h1>
+    </div>
+</header>
+<!-- end of header -->
+<!-- services section -->
+<section class="services">
+    <div class="section-wrapper">
+        <div class="service-wrapper">
+            <!-- start -->
+            <div class="box">
+                <div class="icon" tabindex="0" aria-label="icon of a house">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h4>supported living</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error iste quaerat voluptates est distinctio, dolores aliquam aliquid, minima illo fugit laboriosam voluptatum debitis, ipsum saepe accusantium nisi praesentium sunt quo.</p>
+                <a href="#nb">read more</a>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box">
+                <div class="icon" tabindex="0" aria-label="icon of a hand holding a hand">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h4>careers</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error iste quaerat voluptates est distinctio, dolores aliquam aliquid, minima illo fugit laboriosam voluptatum debitis, ipsum saepe accusantium nisi praesentium sunt quo.</p>
+                <a href="#nb">contact us</a>
+            </div>
+            <!-- end -->
+            <!-- start -->
+            <div class="box">
+                <div class="icon" tabindex="0" aria-label="icon of people">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h4>staff relief</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error iste quaerat voluptates est distinctio, dolores aliquam aliquid, minima illo fugit laboriosam voluptatum debitis, ipsum saepe accusantium nisi praesentium sunt quo.</p>
+                <a href="#nb">read more</a>
+            </div>
+            <!-- end -->
+        </div>
+        <div class="recruit">
+            <h4>Recruiting Now</h4>
+            <p>Registered nurses, Healthcare workers and Support workers.</p>
+            <a href="#n">apply now</a>
+        </div>
+    </div>
+</section>
+<!-- end of services section -->
+{% endblock %}
