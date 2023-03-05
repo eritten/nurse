@@ -7,6 +7,7 @@
     --blueDeep: #043f64;
     --pink: #CF66C7;
     --box-shadow: 3px 5px 9px 0px rgb(0 0 0 / 20%);
+    --text-shadow: -8px -1px 4px rgb(0 0 0 / 80%);
     --max-width: 1200px;
 }
 html {
@@ -296,6 +297,58 @@ header h1 {
     }
 }
 /* end of services */
+/* about */
+.contact-head,
+.about-head {
+    width: 100%;
+    height: 50vh;
+    background: url(../img/img2.webp);
+    background-color: rgba(10,50,20,.6);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+.about {
+    text-align: center;
+}
+.about p {
+    margin-bottom: 1rem;
+}
+.about-divider {
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to right, var(--blueDeep), var(--blue), var(--pink));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.about-divider a {
+    padding: 1rem 1.5rem;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2rem;
+    box-shadow: var(--box-shadow);
+}
+/* end of about */
+.contact-head {
+    background-image: url(../img/img3.webp);
+    background-size: 100% 100%;
+}
 /* footer */
 footer{
     background: var(--gray);

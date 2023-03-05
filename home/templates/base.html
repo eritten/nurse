@@ -22,16 +22,19 @@
         </div>
         <ul class="nav-list">
             <li>
-                <a href="#">home</a>
+                <a href="{% url 'home' %}">home</a>
             </li>
             <li>
-                <a href="#n">about us</a>
+                <a href="{% url 'about' %}">about us</a>
+            </li>
+            <!-- <li>
+                <a href="">download</a>
+            </li> -->
+            <li>
+                <a href="{% url 'contact' %}">contact us</a>
             </li>
             <li>
-                <a href="#n">download</a>
-            </li>
-            <li>
-                <a href="#n">contact us</a>
+                <a href="{% url 'apply' %}">Apply</a>
             </li>
         </ul>
         <button class="menu-btn">
