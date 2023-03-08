@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <title> {% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/aos.css' %}">
     <script src="{% static 'js/all.js' %}"></script>
 </head>
@@ -27,19 +28,21 @@
             <li>
                 <a href="{% url 'about' %}">about us</a>
             </li>
-            <!-- <li>
-                <a href="">download</a>
-            </li> -->
             <li>
-                <a href="{% url 'contact' %}">contact us</a>
-            </li>
-            <li>
-                <a href="{% url 'apply' %}">Apply</a>
+                <a href="#contact">contact us</a>
             </li>
         </ul>
-        <button class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
+        <form action="#" class="search-form">
+            <input type="search" placeholder="search for nursing jobs and press enter" aria-label="search for a job and press enter">
+        </form>
+        <div class="nav-btn-wrapper">
+            <button class="search-btn" aria-label="search button">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="menu-btn" aria-label="menu button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </div>
  </nav>
 {% block content %}
@@ -49,12 +52,12 @@
 <footer>
     <div class="footer-wrapper">
         <div class="mail-box">
-            <p>email: yes@gmail.com</p>
-            <p>tel: 0244 444 444</p>
-            <p>mobile: 0244 444 444</p>
+            <p>Email: yes@gmail.com</p>
+            <p>Tel: 0244 444 444</p>
+            <p>Mobile: 0244 444 444</p>
         </div>
         <div class="address-box">
-            <p>address:</p>
+            <p>Address:</p>
             <address>Vineyard's medical Ltd
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aliquid.</p>
                 <p>63-67 St my's Street</p>
@@ -62,10 +65,10 @@
             </address>
         </div>
         <div class="social-box">
-            <a href="#n" aria-label="facebook">
+            <a href="#n" aria-label="facebook" data-aos="fade-up" data-aos-delay="100">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#n" aria-label="twitter">
+            <a href="#n" aria-label="twitter" data-aos="fade-up" data-aos-delay="200">
                 <i class="fab fa-twitter"></i>
             </a>
         </div>
@@ -76,6 +79,8 @@
 </div>
 <!-- end of footer -->
 <script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 
 <!-- aos init -->
