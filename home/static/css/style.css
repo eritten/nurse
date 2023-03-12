@@ -91,7 +91,7 @@ textarea {
 body {
     overflow-x: hidden;
     font-family: roboto, "Helvetica Neue", sans-serif;
-    font-size: 1.8rem!important
+    font-size: 1.8rem!important;
 }
 /* nav and header */
 nav {
@@ -201,8 +201,48 @@ nav {
 header {
     width: 100%;
     height: 100vh;
-    background: #034e1c;
 }
+/* carousel */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    height: 100%;
+}
+.box-par {
+    position: relative;
+}
+.box-par .content-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 6, 126,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.box-par.box2 .content-box {
+    background: rgba(20, 89, 3, 0.4);
+}
+.box-par.box3 .content-box {
+    background: rgba(82, 3, 89, 0.4);
+}
+.box-par .content-box h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--white);
+    font-size: 4rem;
+}
+.box-par .content-box p {
+    color: var(--white);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+/* end of carousel */
 .nav-list {
     position: absolute;
     top: 110%;
@@ -237,7 +277,14 @@ header {
     .search-form {
         width: 100%;
     }
-}
+    .logo-img {
+        width: 4rem;
+    }
+    .search-btn, 
+    .menu-btn {
+        font-size: 2rem;
+    }
+} 
 /* end of nav and header */
 /* health divider */
 .health-div {
@@ -719,6 +766,18 @@ header {
     }
 }
 /* end of contact */
+/* about */
+.about {
+    padding-top: 10rem;
+}
+.about h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--main-deep);
+}
+/* end of about */
 /* footer */
 footer{
     background: var(--gray);
